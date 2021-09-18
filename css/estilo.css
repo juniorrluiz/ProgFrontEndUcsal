@@ -1,6 +1,6 @@
 /* CSS bt IT UCSAL */
 body {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-family: "Nunito", "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -68,12 +68,12 @@ header #redes_sociais ul li a:hover.facebook {
   background: url("../imagens/facebook_hover.png") no-repeat;
 }
 
-header #redes_sociais ul li a.rss {
+/* header #redes_sociais ul li a.rss {
   background: url("../imagens/rss.png") no-repeat;
 }
 header #redes_sociais ul li a:hover.rss {
   background: url("../imagens/rss_hover.png") no-repeat;
-}
+} */
 
 header #redes_sociais ul li a.pinterest {
   background: url("../imagens/pinterest.png") no-repeat;
@@ -88,26 +88,26 @@ header #redes_sociais ul li a.google {
 header #redes_sociais ul li a:hover.google {
   background: url("../imagens/google_hover.png") no-repeat;
 }
-header #menu_principal{
+header #menu_principal {
   border-top: #dadada solid 1px;
   clear: both;
   width: 960px;
   height: 70px;
 }
-header #menu_principal ul{
+header #menu_principal ul {
   margin: 0;
   padding: 0;
   list-style: none;
   float: left;
 }
 
-header #menu_principal ul li{
+header #menu_principal ul li {
   margin: 0;
   padding: 0;
   list-style: none;
   float: left;
-} 
-header #menu_principal ul li a{
+}
+header #menu_principal ul li a {
   display: block;
   padding-top: 30px;
   padding-right: 15px;
@@ -120,7 +120,7 @@ header #menu_principal ul li a{
   float: left;
 }
 
-header #menu_principal ul li a:hover{
+header #menu_principal ul li a:hover {
   color: #2ecc71;
 }
 
@@ -132,10 +132,95 @@ header #menu_principal ul li a:hover{
   background-position: center top;
   background-repeat: no-repeat; */
 }
-#conteudo {
-  background: #89b9f9;
+
+#banner .img_banner {
+  display: block;
+  width: 830px;
+  height: 472px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 120px;
 }
+
+#banner .texto_banner {
+  display: block;
+  width: 750px;
+  height: 60px;
+  padding-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#banner a.botao_banner {
+  display: block;
+  background: #2ecc71;
+  width: 215px;
+  height: 35px;
+  padding-top: 15px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffffff;
+}
+
+#banner a:hover.botao_banner {
+  text-decoration: underline;
+}
+
+#conteudo{
+  padding-bottom: 50px ;
+  display: block;
+  float: left;
+}
+
+#conteudo .chamada {
+  float: left;
+  width: 300px;
+  margin-left: 15px;
+}
+
+#conteudo .titulo_chamada {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#conteudo a.leia {
+  background: #a8a8a8;
+  border: #398cad solid 2px;
+  padding: 5px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+
+}
+#conteudo a:hover.leia{
+  background: #2ecc71;
+  text-decoration: underline;
+
+}
+
+
 footer {
   background: #efefef;
   height: 90px;
+  margin-top: 50px;
+  clear: both;
+}
+
+footer .texto_rodape{
+
+  padding-top: 30px;
+  padding-left: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+
 }

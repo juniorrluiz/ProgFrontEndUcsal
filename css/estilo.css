@@ -1,40 +1,65 @@
 /* CSS bt IT UCSAL */
 body {
-  font-family: "Nunito", "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-family: "Bebas Neue", "Trebuchet MS", Arial, Helvetica, sans-serif, cursive;
   margin: 0;
   padding: 0;
 }
 main {
-  width: 960px;
+  /* width: 960px; */
   margin-left: auto;
   margin-right: auto;
 }
+
+header, section{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
 header {
   /* background-color: #f5999a; */
   height: 153px;
   margin-top: 30px;
+  width: 960px;
+
 }
 header h1 {
   margin: 0;
   padding: 0;
 }
-header h1 a {
-  background: url("../imagens/h1_logo.png") top left no-repeat;
+/* header h1 a {
+  background: url("../imagens/Untitled-1.png") top left no-repeat;
   display: block;
   width: 150px;
   height: 50px;
   padding-left: 65px;
   padding-top: 10px;
-  color: #737373;
+  color: #ff0000;
   text-decoration: none;
   font-size: 24px;
   float: left;
-}
+}*/
 header h1 a:hover {
-  color: #2ecc71;
+  color: #f30303;
+}
+
+button{
+color: rgb(255, 255, 255); 
+margin-left: 110px; 
+background-color: #e50914; 
+width: 80px;
+ height: 30px;
+ border: none;
+ border-radius: 3px;
+ font-size: 16px;
+ font-weight: 400;
+ padding: 7px 17px;
 }
 
 header #redes_sociais {
+  margin-top: 10px;
   height: 34px;
   float: right;
 }
@@ -47,6 +72,8 @@ header #redes_sociais ul li {
 }
 
 header #redes_sociais ul li a {
+  margin-top: 10px;
+  margin-right: 20px;
   display: block;
   width: 34px;
   height: 34px;
@@ -55,6 +82,7 @@ header #redes_sociais ul li a {
 }
 
 header #redes_sociais ul li a.twitter {
+
   background: url("../imagens/twitter.png") no-repeat;
 }
 header #redes_sociais ul li a:hover.twitter {
@@ -67,13 +95,6 @@ header #redes_sociais ul li a.facebook {
 header #redes_sociais ul li a:hover.facebook {
   background: url("../imagens/facebook_hover.png") no-repeat;
 }
-
-/* header #redes_sociais ul li a.rss {
-  background: url("../imagens/rss.png") no-repeat;
-}
-header #redes_sociais ul li a:hover.rss {
-  background: url("../imagens/rss_hover.png") no-repeat;
-} */
 
 header #redes_sociais ul li a.pinterest {
   background: url("../imagens/pinterest.png") no-repeat;
@@ -89,6 +110,7 @@ header #redes_sociais ul li a:hover.google {
   background: url("../imagens/google_hover.png") no-repeat;
 }
 header #menu_principal {
+  margin-top: 20px;
   border-top: #dadada solid 1px;
   clear: both;
   width: 960px;
@@ -121,11 +143,12 @@ header #menu_principal ul li a {
 }
 
 header #menu_principal ul li a:hover {
-  color: #2ecc71;
+  color: #f30303;
 }
 
 #banner {
-  background: url("../imagens/bg_banner.png") no-repeat top center;
+  margin-top: 100px;
+  background: url("../imagens/2f88a9427474343f7275e3b8f6fcc2e1.jpg") no-repeat top center;
   height: 775px;
   /* opção 2 do css */
   /* background-image: url(../imagens/bg_banner.png) ;
@@ -154,11 +177,12 @@ header #menu_principal ul li a:hover {
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
+  color: white;
 }
 
 #banner a.botao_banner {
   display: block;
-  background: #2ecc71;
+  background: #f30303;
   width: 215px;
   height: 35px;
   padding-top: 15px;
@@ -177,12 +201,17 @@ header #menu_principal ul li a:hover {
 }
 
 #conteudo{
+  width: 960px;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 50px ;
   display: block;
-  float: left;
+
 }
 
 #conteudo .chamada {
+  color: white;
   float: left;
   width: 300px;
   margin-left: 15px;
@@ -191,36 +220,40 @@ header #menu_principal ul li a:hover {
 #conteudo .titulo_chamada {
   font-size: 18px;
   font-weight: 600;
+  color: white;
 }
 
 #conteudo a.leia {
   background: #a8a8a8;
-  border: #398cad solid 2px;
+  border-radius: 15px;
   padding: 5px;
   color: white;
   font-weight: 500;
   text-decoration: none;
+  margin-left: 90px;
 
 }
 #conteudo a:hover.leia{
-  background: #2ecc71;
+  background: #f30303;
   text-decoration: underline;
 
 }
 
 
 footer {
-  background: #efefef;
+  background: #000000;
   height: 90px;
   margin-top: 50px;
   clear: both;
 }
 
 footer .texto_rodape{
-
+color: white;
   padding-top: 30px;
   padding-left: 30px;
   font-weight: 500;
   text-transform: uppercase;
 
 }
+
+

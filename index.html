@@ -5,114 +5,109 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>..:: Primeiro site ::..</title>
-  <link href="imagens/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <title>Gatoflix Brasil</title>
+  <link href="imagens/icone-site.png" rel="shortcut icon" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="css/estilo.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-    </style>
 </head>
 
 <body style="background-color: rgb(0, 0, 0);">
-  <main >
+  <main>
     <header>
-      <img src="imagens/Untitled-1 (1).png" style="width: 250px;" alt="">
-      
+      <img src="imagens/GatoFlix.png" style="width: 250px;" alt="">
       <nav id="redes_sociais">
-       <button>Entrar</button> 
+        <button id="botaoEntrar">Entrar</button>
         <ul>
           <li><a href="#" class="twitter">Twitter</a></li>
           <li><a href="#" class="facebook">Facebook</a></li>
           <li><a href="#" class="pinterest">Pinterest</a></li>
           <li><a href="#" class="google">Google+</a></li>
-        </ul>  
+        </ul>
       </nav>
       <nav id="menu_principal">
         <ul>
-          <li><a href="#" class="service">SERVICE</a></li>
-          <li><a href="#" class="about">ABOUT</a></li>
-          <li><a href="#" class="work">WORK</a></li>
-          <li><a href="#" class="contact">CONTACT</a></li>
+          <li><a href="#redes_sociais" class="service">Início</a></li>
+          <li><a href="#conteudo" class="about">Séries</a></li>
+          <li><a href="#conteudo" class="work">Filmes</a></li>
+          <li><a href="#conteudo" class="contact">Bombando</a></li>
+          <li><a href="#conteudo" class="contact">Minha lista</a></li>
         </ul>
       </nav>
     </header>
-
     <div id="banner">
-      <img src="imagens/banner_01.png" alt="banner com desenho de plataformas PC, Tablet, Smartphone"
-        class="img_banner">
-      <p class="texto_banner"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore blanditiis corporis
-        repudiandae! Molestias recusandae, hic corrupti earum sed nisi necessitatibus sint et distinctio consectetur
-        magni nulla voluptas ipsam. Tenetur, amet.</p>
-      <p>
-        <a href="#" class="botao_banner">Browse Portfolio</a>
-      </p>
+      <h1 class="texto_banner">Filmes, séries e muito mais.</h1></b>
+      <h1 class="texto_banner" style="margin-top: -240px;">Sem limites.</h1>
+      <h2 style="margin-top: -15px;" class="texto_banner2">Assista onde quiser. Cancele quando quiser.</h2></b>
+      <h3 style="margin-top: -40px;" class="texto_banner3">Pronto para assistir? Informe seu email para criar ou
+        reiniciar sua assinatura.</h3>
+      <form style="margin-top: -25px" id="formEmail" for="email">
+        <input type="email" name="email" id="inputEmail" placeholder="Email"><input type="submit" value="Vamos lá"
+          id="botaoEmail">
+      </form>
+    </div>
     </div>
     <section id="conteudo">
       <div class="chamada">
-        <img src="imagens/tv.png" alt="News" class="img_chamada" style="width: 260px;">
-        <p style="text-align: center;" class="titulo_chamada">Aproveite na TV</p>
-        <p class="texto_chamada">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus nobis quas
-          vero doloremque eius minus odio nihil quis in! Similique accusamus quos optio animi ut doloribus facilis est
-          excepturi!</p>
+        <img src="imagens/f1-apenas-para-viver.jpg" alt="News" class="img_chamada">
+        <p style="text-align: center;" class="titulo_chamada">Fórmula 1: Dirigir Para Viver</p>
+        <p class="texto_chamada" style="text-align: justify;"> É uma Série de Documentários produzida em colaboração
+          entre a Gatoflix e a Fórmula 1 para dar uma visão exclusiva dos bastidores do Campeonato Mundial de Fórmula 1
+          2018.</p>
         <p>
-          <a class ="leia" href="#">Leia + sobre</a>
+          <a class="leia" href="#">Assista agora!</a>
         </p>
       </div>
       <div class="chamada">
-        <img src="imagens/news_02.png" alt="News" class="img_chamada">
-        <p style="text-align: center;" class="titulo_chamada">Baixe para assistir Offline</p>
-        <p class="texto_chamada">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus nobis quas
-          vero doloremque eius minus odio nihil quis in! Similique accusamus quos optio animi ut doloribus facilis est
-          excepturi!</p>
-        <p >
-          <a class ="leia" href="#">Leia + sobre</a>
+        <img src="imagens/o-profissional.webp" alt="News" class="img_chamada">
+        <p style="text-align: center;" class="titulo_chamada">O Profissional</p>
+        <p class="texto_chamada" style="text-align: justify;">Mathilda tem apenas 12 anos de idade mas já conhece o lado
+          obscuro da vida: seu pai abusivo guarda drogas para policiais corruptos e a mãe a negligencia.</p>
+        <p style="padding-top: 25px;">
+          <a class="leia" href="#">Assista agora!</a>
         </p>
       </div>
-      <div class="chamada">
-        <img src="imagens/news_03.png" alt="News" class="img_chamada">
-        <p class="titulo_chamada">News 03</p>
-        <p class="texto_chamada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsam quae amet commodi?
-          Fugit ex praesentium sunt nemo tempora distinctio aperiam consequatur assumenda laudantium, vitae eum facilis
-          alias dicta non!</p>
-        <p >
-          <a class ="leia" href="#">Leia + sobre</a>
+      <div style="margin-top: 40px;" class="chamada">
+        <img src="imagens/o-livro-de-eli.webp" alt="News" class="img_chamada">
+        <p style="text-align: center;" class="titulo_chamada">O Livro de Eli</p>
+        <p class="texto_chamada" style="text-align: justify;">Trinta anos depois da guerra ter dizimado o mundo, um
+          guerreiro solitário chamado Eli caminha por horizontes arruinados dando esperança para os que restaram.</p>
+        <p style="padding-top: 18px;">
+          <a class="leia" href="#">Assista agora!</a>
         </p>
       </div>
-      <div class="chamada">
-        <img src="imagens/news_04.png" alt="News" class="img_chamada">
-        <p class="titulo_chamada">News 04</p>
-        <p class="texto_chamada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsam quae amet commodi?
-          Fugit ex praesentium sunt nemo tempora distinctio aperiam consequatur assumenda laudantium, vitae eum facilis
-          alias dicta non!</p>
-        <p >
-          <a class ="leia" href="#">Leia + sobre</a>
+      <div style="margin-top: 40px;" class="chamada">
+        <img src="imagens/o-regresso.webp" alt="News" class="img_chamada">
+        <p style="text-align: center;" class="titulo_chamada">O Regresso</p>
+        <p class="texto_chamada" style="text-align: justify;">Após ser atacado por um urso, o caçador Hugh Glass é
+          abandonado na floresta por seu companheiro John Fitzgerald. Apesar de muito ferido, Glass consegue sobreviver
+          e vai em busca de vingança.</p>
+        <p style="padding-top: 20px;">
+          <a class="leia" href="#">Assista agora!</a>
         </p>
       </div>
-      <div class="chamada">
-        <img src="imagens/news_05.png" alt="News" class="img_chamada">
-        <p class="titulo_chamada">News 05</p>
-        <p class="texto_chamada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsam quae amet commodi?
-          Fugit ex praesentium sunt nemo tempora distinctio aperiam consequatur assumenda laudantium, vitae eum facilis
-          alias dicta non!</p>
-        <p >
-          <a class ="leia" href="#">Leia + sobre</a>
+      <div style="margin-top: 40px;" class="chamada">
+        <img src="imagens/peak-blinders.jpg" alt="News" class="img_chamada">
+        <p style="text-align: center;" class="titulo_chamada">Peaky Blinders</p>
+        <p class="texto_chamada" style="text-align: justify;">Os Peaky Blinders eram uma organização criminosa,
+          originalmente de Birmingham, Inglaterra, que operava no território das Midlands Ocidentais, desde o final do
+          século XIX até aos anos 30 do século XX. </p>
+        <p>
+          <a class="leia" href="#">Assista agora!</a>
         </p>
       </div>
-      <div class="chamada">
-        <img src="imagens/news_06.png" alt="News" class="img_chamada">
-        <p class="titulo_chamada">News 06</p>
-        <p class="texto_chamada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsam quae amet commodi?
-          Fugit ex praesentium sunt nemo tempora distinctio aperiam consequatur assumenda laudantium, vitae eum facilis
-          alias dicta non!</p>
-        <p >
-          <a class ="leia" href="#">Leia + sobre</a>
+      <div style="margin-top: 40px;" class="chamada">
+        <img src="imagens/cavaleiros-do-zodiaco.webp" alt="News" class="img_chamada">
+        <p style="text-align: center;" class="titulo_chamada">Os Cavaleiros do Zodíaco</p>
+        <p class="texto_chamada" style="text-align: justify;">Saint Seiya ou Os Cavaleiros do Zodíaco é uma série
+          japonesa de mangá e anime escrito e ilustrada por Masami Kurumada. Foi publicada originalmente na revista
+          Weekly Shōnen Jump de dezembro de 1985.</p>
+        <p>
+          <a class="leia" href="#">Assista agora!</a>
         </p>
       </div>
     </section>
-   <footer>
-			<p class="texto_rodape">Copyright 2021 Display. All Rights Reserved.</p>
-		</footer>
-
+    <footer>
+      <p class="texto_rodape">Site by Antonio Luiz. Copyright 2021 Display. All Rights Reserved.</p>
+    </footer>
   </main>
 </body>
 

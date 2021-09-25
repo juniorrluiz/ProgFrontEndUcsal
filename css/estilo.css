@@ -1,6 +1,12 @@
-/* CSS bt IT UCSAL */
+/* CSS by Antonio Luiz TI UCSAL */
+@font-face {
+  font-family: "Netflix";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/NetflixSansRegular.ttf") format("opentype");
+}
 body {
-  font-family: "Bebas Neue", "Trebuchet MS", Arial, Helvetica, sans-serif, cursive;
+  font-family: "Netflix";
   margin: 0;
   padding: 0;
 }
@@ -10,12 +16,11 @@ main {
   margin-right: auto;
 }
 
-header, section{
+header,
+section {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
-
 }
 
 header {
@@ -23,7 +28,6 @@ header {
   height: 153px;
   margin-top: 30px;
   width: 960px;
-
 }
 header h1 {
   margin: 0;
@@ -40,22 +44,54 @@ header h1 {
   text-decoration: none;
   font-size: 24px;
   float: left;
-}*/
+} */
 header h1 a:hover {
   color: #f30303;
 }
 
-button{
-color: rgb(255, 255, 255); 
-margin-left: 110px; 
-background-color: #e50914; 
-width: 80px;
- height: 30px;
- border: none;
- border-radius: 3px;
- font-size: 16px;
- font-weight: 400;
- padding: 7px 17px;
+#botaoEntrar {
+  color: rgb(255, 255, 255);
+  margin-left: 110px;
+  background-color: #e50914;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 7px 17px;
+}
+
+#inputEmail {
+  display: flex left;
+  width: 340px;
+  height: 49px;
+  /* padding-top: 20px; */
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border-radius: 3px;
+  border: none;
+ 
+}
+
+#botaoEmail {
+  color: #ffffff;
+  background-color: #f30303;
+  border-radius: 3px;
+  border: none;
+  font-size: 18px;
+  padding: 7px 17px;
+  width: 150px;
+  height: 49px;
+}
+#botaoEmail a {
+  text-decoration: none;
+  color: white;
+}
+#botaoEmail a:hover {
+  text-decoration: underline;
 }
 
 header #redes_sociais {
@@ -82,36 +118,35 @@ header #redes_sociais ul li a {
 }
 
 header #redes_sociais ul li a.twitter {
-
   background: url("../imagens/twitter.png") no-repeat;
 }
 header #redes_sociais ul li a:hover.twitter {
-  background: url("../imagens/twitter_hover.png") no-repeat;
+  background: url("../imagens/twitter_hover_red.png") no-repeat;
 }
 
 header #redes_sociais ul li a.facebook {
   background: url("../imagens/facebook.png") no-repeat;
 }
 header #redes_sociais ul li a:hover.facebook {
-  background: url("../imagens/facebook_hover.png") no-repeat;
+  background: url("../imagens/facebook_hover_red.png") no-repeat;
 }
 
 header #redes_sociais ul li a.pinterest {
   background: url("../imagens/pinterest.png") no-repeat;
 }
 header #redes_sociais ul li a:hover.pinterest {
-  background: url("../imagens/pinterest_hover.png") no-repeat;
+  background: url("../imagens/pinterest_hover_red.png") no-repeat;
 }
 
 header #redes_sociais ul li a.google {
   background: url("../imagens/google.png") no-repeat;
 }
 header #redes_sociais ul li a:hover.google {
-  background: url("../imagens/google_hover.png") no-repeat;
+  background: url("../imagens/google_hover_red.png") no-repeat;
 }
 header #menu_principal {
   margin-top: 20px;
-  border-top: #dadada solid 1px;
+  border-top: #cecece solid 2px;
   clear: both;
   width: 960px;
   height: 70px;
@@ -134,11 +169,11 @@ header #menu_principal ul li a {
   padding-top: 30px;
   padding-right: 15px;
   padding-left: 0px;
-  color: #737373;
+  color: #ffffff;
   text-decoration: none;
-  text-align: left;
-  font-size: 18px;
-  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  /* font-weight: bold; */
   float: left;
 }
 
@@ -147,9 +182,13 @@ header #menu_principal ul li a:hover {
 }
 
 #banner {
+  text-align: center;
   margin-top: 100px;
-  background: url("../imagens/2f88a9427474343f7275e3b8f6fcc2e1.jpg") no-repeat top center;
+  background: url("../imagens/2f88a9427474343f7275e3b8f6fcc2e12.jpg") no-repeat
+    top center;
   height: 775px;
+  width: auto;
+
   /* opção 2 do css */
   /* background-image: url(../imagens/bg_banner.png) ;
   background-position: center top;
@@ -169,24 +208,57 @@ header #menu_principal ul li a:hover {
   display: block;
   width: 750px;
   height: 60px;
+  padding-top: 220px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* text-transform: uppercase; */
+  font-weight: 1000;
+  color: white;
+  font-size: 50px;
+}
+
+#banner .texto_banner2 {
+  display: block;
+  width: 750px;
+  height: 60px;
   padding-top: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 500;
   color: white;
 }
 
-#banner a.botao_banner {
+#banner .texto_banner3 {
+  display: block;
+  width: 750px;
+  height: 60px;
+  padding-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* text-transform: uppercase; */
+  font-weight: 500;
+  color: white;
+}
+
+
+
+/* #banner a.botao_banner {
   display: block;
   background: #f30303;
   width: 215px;
   height: 35px;
   padding-top: 15px;
-  margin-top: 15px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
@@ -194,27 +266,27 @@ header #menu_principal ul li a:hover {
   text-decoration: none;
   text-align: center;
   color: #ffffffff;
+  border-radius: 20px;
 }
 
 #banner a:hover.botao_banner {
   text-decoration: underline;
-}
+} */
 
-#conteudo{
-  width: 960px;
-  margin-top: 70px;
+#conteudo {
+  width: 1000px;
+  margin-top: 150px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 50px ;
+  padding-bottom: 50px;
   display: block;
-
 }
 
 #conteudo .chamada {
   color: white;
   float: left;
   width: 300px;
-  margin-left: 15px;
+  margin-left: 130px;
 }
 
 #conteudo .titulo_chamada {
@@ -231,29 +303,24 @@ header #menu_principal ul li a:hover {
   font-weight: 500;
   text-decoration: none;
   margin-left: 90px;
-
 }
-#conteudo a:hover.leia{
+#conteudo a:hover.leia {
   background: #f30303;
   text-decoration: underline;
-
 }
-
 
 footer {
   background: #000000;
   height: 90px;
-  margin-top: 50px;
+  margin-top: 100px;
   clear: both;
 }
 
-footer .texto_rodape{
-color: white;
+footer .texto_rodape {
+  color: white;
   padding-top: 30px;
   padding-left: 30px;
   font-weight: 500;
   text-transform: uppercase;
-
+  text-align: center;
 }
-
-
